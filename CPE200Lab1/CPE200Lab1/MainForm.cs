@@ -103,14 +103,18 @@ namespace CPE200Lab1
         }
 
         private void btnOperator_Click(object sender, EventArgs e)
-        {
+        {       
             if (lblDisplay.Text is "Error")
             {
                 return;
             }
             if (isAfterOperater)
             {
-                return;
+                string secondOperand = lblDisplay.Text;
+                string result = calculate(operate, firstOperand, secondOperand);
+                
+                    lblDisplay.Text = result;
+                
             }
             operate = ((Button)sender).Text;
             switch (operate)
