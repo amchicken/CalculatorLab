@@ -69,7 +69,7 @@ namespace CPE200Lab1
                 isSpaceAllowed = false;
             }
         }
-
+        //
         private void btnBack_Click(object sender, EventArgs e)
         {
             if (lblDisplay.Text is "Error")
