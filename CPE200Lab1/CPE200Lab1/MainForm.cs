@@ -81,7 +81,7 @@ namespace CPE200Lab1
             }
             operate = ((Button)sender).Text;
             firstOperand = lblDisplay.Text;
-            string result = engine.unaryCalculate(operate, firstOperand);
+            string result = engine.aCalculate(operate, firstOperand);
             if (result is "E" || result.Length > 8)
             {
                 lblDisplay.Text = "Error";
@@ -92,7 +92,7 @@ namespace CPE200Lab1
             }
 
         }
-
+        
         private void btnOperator_Click(object sender, EventArgs e)
         {
             if (lblDisplay.Text is "Error")
